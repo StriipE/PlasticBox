@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generator
 {
-    class DataGenerator
+    public class DataGenerator
     {
      
     }

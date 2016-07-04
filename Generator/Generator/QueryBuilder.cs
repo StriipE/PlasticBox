@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generator
 {
-    class QueryBuilder
+    public class QueryBuilder
     {
     }
 }
