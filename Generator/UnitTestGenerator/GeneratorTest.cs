@@ -18,5 +18,11 @@ namespace UnitTestGenerator
         {
             Assert.AreEqual(10, parameters.SalesVariationPercentage);
         }
+        [TestMethod]
+        public void TestGenClient()
+        {
+            Assert.AreEqual("alexandre.aubert@gmail.com", Client.GenerateNewClient());
+        }
+
     }
 }
