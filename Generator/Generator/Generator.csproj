@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
+    <Compile Include="ClientGenerator.cs" />
+    <Compile Include="Commande.cs" />
     <Compile Include="DataGenerator.cs" />
     <Compile Include="QueryBuilder.cs" />
     <Compile Include="UserParameters.cs" />
