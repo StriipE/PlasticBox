@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Connector
 {
-    class IDataManager
+    public interface IDataManager
     {
+        DataSet ExecuteQuery(string databaseName, string query, string nomTable, bool isNonQuery);
     }
 }

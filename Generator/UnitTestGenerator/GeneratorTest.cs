@@ -9,6 +9,7 @@ namespace UnitTestGenerator
     {
         public UserParameters parameters;
         public ClientGenerator clientGen;
+        public QueryBuilder builder;
 
         [TestInitialize]
         public void TestInitialize()
@@ -24,7 +25,7 @@ namespace UnitTestGenerator
         [TestMethod]
         public void TestGenClient()
         {
-            Assert.AreEqual("alexandre.aubert@gmail.com", clientGen.GenerateNewClient());
+            
         }
 
     }
