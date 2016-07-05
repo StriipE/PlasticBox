@@ -19,6 +19,5 @@ namespace Generator
         public int CompteClient { get; set; }
         public int TypeClient { get; set; }
         public int Pays { get; set; }
-
     }
 }
