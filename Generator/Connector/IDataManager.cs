@@ -9,6 +9,6 @@ namespace Connector
 {
     public interface IDataManager
     {
-        DataSet ExecuteQuery(string databaseName, string query, string nomTable, bool isNonQuery);
+        DataSet ExecuteQuery(string query, string nomTable, bool isNonQuery);
     }
 }

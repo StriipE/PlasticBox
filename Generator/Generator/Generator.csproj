@@ -42,13 +42,24 @@
     <Compile Include="Client.cs" />
     <Compile Include="ClientGenerator.cs" />
     <Compile Include="Commande.cs" />
+    <Compile Include="CommandeGenerator.cs" />
     <Compile Include="DataGenerator.cs" />
     <Compile Include="QueryBuilder.cs" />
     <Compile Include="UserParameters.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\Connector\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Connector\Connector.csproj">
+      <Project>{d9850ca2-cf2f-4936-9671-c5dacb0d0088}</Project>
+      <Name>Connector</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

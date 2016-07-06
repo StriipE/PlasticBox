@@ -12,8 +12,14 @@ namespace Generator
     public class QueryBuilder : IDataManager
     {
         private Linker Linker = new Linker();
+        private string databaseName;
 
-        public DataSet ExecuteQuery(string databaseName, string query, string nomTable, bool isNonQuery)
+        public QueryBuilder(string _databaseName)
+        {
+            databaseName = _databaseName;
+        }
+
+        public DataSet ExecuteQuery(string query, string nomTable, bool isNonQuery)
         {
             MySqlConnection Connection = Linker.ConnectToDatabase(databaseName);
             MySqlDataAdapter Adapter;

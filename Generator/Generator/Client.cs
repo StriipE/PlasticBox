@@ -8,7 +8,6 @@ namespace Generator
 {
     public class Client
     {
-        public int ID { get; set; }
         public string Adresse { get; set; }
         public string Nom { get; set; }
         public string Prenom { get; set; }
@@ -16,8 +15,8 @@ namespace Generator
         public string Telephone { get; set; }
         public string Mobile { get; set; }
         public DateTime DateInscription { get; set; }
-        public int CompteClient { get; set; }
-        public int TypeClient { get; set; }
+        public string CompteClient { get; set; }
+        public string TypeClient { get; set; }
         public int Pays { get; set; }
     }
 }

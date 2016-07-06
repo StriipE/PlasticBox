@@ -9,23 +9,21 @@ namespace UnitTestGenerator
     {
         public UserParameters parameters;
         public ClientGenerator clientGen;
-        public QueryBuilder builder;
+        public QueryBuilder builderAdministration;
 
         [TestInitialize]
         public void TestInitialize()
         {
             parameters = new UserParameters(10, 100, DateTime.Now ,10);
             clientGen = new ClientGenerator();
-        }
-        [TestMethod]
-        public void TestMethod1()
-        {
-            Assert.AreEqual(10, parameters.SalesVariationPercentage);
+            builderAdministration = new QueryBuilder("administration");
         }
         [TestMethod]
         public void TestGenClient()
         {
-            
+                clientGen.GenerateNewClients(10000); // Genère 100 clients
+                //builderAdministration.
+
         }
 
     }
