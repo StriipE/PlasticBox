@@ -1,5 +1,4 @@
 rue Aubry le Boucher
-rue de l'Aude
 rue Audran
 rue Audubon
 rue Auger
@@ -74,7 +73,6 @@ rue Michel Peter
 place Michel Petrucciani
 rue Michel Tagrine
 villa Michel-Ange
-carrefour de la Patte d'Oie
 rue des Pâtures
 rue Paturle
 rue Pau Casals
@@ -99,7 +97,6 @@ rue Ramey
 rue Saint-Guillaume
 rue Saint-Hippolyte
 rue Saint-Honoré
-avenue Saint-Honoré d'Eylau
 route Saint-Hubert
 rue Saint-Hubert
 rue Saint-Hyacinthe

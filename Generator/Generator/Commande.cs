@@ -8,7 +8,6 @@ namespace Generator
 {
     public class Commande
     {
-        public int Id { get; set; }
         public DateTime Date { get; set; }
         public DateTime DateFinPreparation { get; set; }
         public DateTime DateExpedition { get; set; }

@@ -24,7 +24,7 @@ namespace Generator
 
         public void GenerateNewClients(int NumberOfClients)
         {
-            string query = @"INSERT INTO administration._client (Adresse, Nom, Prenom, Mail, Telepone, Mobile, DateInscription, Compte, Type, Id_Pays) VALUES ";
+            string query = @"INSERT INTO administration._client (Adresse, Nom, Prenom, Mail, Telephone, Mobile, DateInscription, Compte, Type, Id_Pays) VALUES ";
             //  List<Client> clients = new List<Client>();
             for (int i = 0; i < NumberOfClients; i++)
             {
@@ -54,7 +54,7 @@ namespace Generator
 
         private string GenerationAdresse()
         {
-            string adresse = random.Next(100).ToString() + " " + File.ReadLines(ADRESSE_PATH).Skip(random.Next(File.ReadLines(ADRESSE_PATH).Count() - 1)).Take(1).First();
+            string adresse = (random.Next(100) + 1).ToString() + " " + File.ReadLines(ADRESSE_PATH).Skip(random.Next(File.ReadLines(ADRESSE_PATH).Count() - 1)).Take(1).First();
             return adresse; 
         }
         private string GenerationPrenom()

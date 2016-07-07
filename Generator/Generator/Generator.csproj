@@ -43,7 +43,10 @@
     <Compile Include="ClientGenerator.cs" />
     <Compile Include="Commande.cs" />
     <Compile Include="CommandeGenerator.cs" />
+    <Compile Include="Conditionnement.cs" />
     <Compile Include="DataGenerator.cs" />
+    <Compile Include="ConditionnementGenerator.cs" />
+    <Compile Include="Produit.cs" />
     <Compile Include="QueryBuilder.cs" />
     <Compile Include="UserParameters.cs" />
   </ItemGroup>

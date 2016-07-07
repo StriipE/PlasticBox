@@ -48,6 +48,30 @@ namespace Generator
 
             return DataSet;
         }
+
+       
+        public int ExecuteScalarInt (string query)
+        {
+            MySqlConnection Connection = Linker.ConnectToDatabase(databaseName);
+          
+            int newProdID = 0;
+            MySqlCommand cmd = new MySqlCommand(query, Connection);
+
+            try
+            {
+                  Connection.Open();
+                  newProdID = Convert.ToInt32(cmd.ExecuteScalar());
+                  Connection.Close();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Erreur SQL:\n" + e.Message);
+                Console.WriteLine("La connexion n'a pas été établie");
+            }
+
+            return (int)newProdID;
+        }
+     
     }
 }
 

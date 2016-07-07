@@ -9,7 +9,7 @@ namespace Connector
 {
     public class Linker
     {
-        private const string CONNECTION_STRING = @"server=192.168.56.1;uid=generator;pwd=generator;database=";
+        private const string CONNECTION_STRING = @"server=localhost;uid=root;pwd=;database=";
         private MySqlConnection Connection;
 
         public MySqlConnection ConnectToDatabase(string databaseName)

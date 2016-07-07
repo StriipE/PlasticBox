@@ -9,6 +9,7 @@ namespace UnitTestGenerator
     {
         public UserParameters parameters;
         public ClientGenerator clientGen;
+        public CommandeGenerator commandeGen;
         public QueryBuilder builderAdministration;
 
         [TestInitialize]
@@ -16,12 +17,14 @@ namespace UnitTestGenerator
         {
             parameters = new UserParameters(10, 100, DateTime.Now ,10);
             clientGen = new ClientGenerator();
+            commandeGen = new CommandeGenerator();
             builderAdministration = new QueryBuilder("administration");
         }
         [TestMethod]
         public void TestGenClient()
         {
-                clientGen.GenerateNewClients(10000); // Genère 100 clients
+            //clientGen.GenerateNewClients(100); // Genère 100 clients
+            commandeGen.GenerateNewOrder(100, 12);
                 //builderAdministration.
 
         }
